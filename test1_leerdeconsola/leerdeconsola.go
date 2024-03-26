@@ -12,7 +12,9 @@ import (
 func main() {
 
 	reader := bufio.NewReader(os.Stdin)
+
 	fmt.Println("Enter text,thanks: ")
+
 	text, err := reader.ReadString('\n')
 	if err != nil {
 		log.Fatalf("%v\n", err)
