@@ -22,10 +22,11 @@ func main() {
 	text = strings.Trim(text, "\n")
 	fmt.Printf("The text is %v characters long\n", utf8.RuneCountInString(text))
 
+	//sl es un slice
 	sl := strings.Split(text, " ")
-
+	//se le añade al slice una entrada más
 	sl = append(sl, "!!!")
-	output := strings.Join(sl, " ")
-	fmt.Printf("Salida: %s\n", output)
+	//el slice se imprime como string
+	fmt.Printf("Salida: %s\n", sl)
 
 }
